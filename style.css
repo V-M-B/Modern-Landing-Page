@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+
+    font-family:"Gilroy";
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+
+}
+
+.left{
+    position: relative;
+    width: 40%;
+    height: 100%;
+    
+}
+
+.right{
+    width: 60%;
+    height: 100%;
+    background-color: rgb(23, 32, 140);
+}
+
+.rtop{
+
+    width: 100%;
+    height: 50%;
+    background-color: azure;
+    display: flex;
+}
+
+
+.rbottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(./assets/11.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rtop-r{
+    width: 45%;
+    height: 100%;
+    background-image: url(./assets/hanvin-cheong-L6ZnG4RsERA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.rtop-l{
+    width: 55%;
+    height: 100%;
+    background-image: url(./assets/hanvin-cheong-97JE7WuYpY8-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lnav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+}
+
+.lnavr a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.lnavr{
+    display: flex;
+    align-items: center;
+    
+}
+
+.lnavr i{
+    color: royalblue;
+}
+
+.txtcenter a{
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    opacity: 0.5;
+}
+
+.left .txtcenter{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%,-50%);
+}
+.txtcenter h1{
+    font-size: 85px;
+    font-weight: 900;
+}
+
+.txtcenter p{
+    opacity: .6;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+@media(max-width:500px) {
+    .main{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+    }
+    .right{
+        width: 100%;
+    }
+}
